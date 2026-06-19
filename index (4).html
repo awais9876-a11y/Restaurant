@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo">Restuarants</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#booking">Reserve</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Fine Dining · Lahore</p>
+        <h1 class="hero-title">A Table for<br />Every Occasion</h1>
+        <p class="hero-subtitle">
+          Hand-crafted Italian cuisine, warm candlelight.
+        </p>
+        <a href="#booking" class="btn-primary">Reserve Your Table</a>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section class="booking" id="booking">
+      <div class="container">
+        <span class="section-label center">Make a Reservation</span>
+        <h2 class="center">Book Your Table</h2>
+        <p class="booking-sub center">Fill in the details below.</p>
+
+        <div class="form-card">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Awais" />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Riaz" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="mawais@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+92 300 0000000" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <select id="time">
+                <option value="">Select a time</option>
+                <option>7:00 PM</option>
+                <option>7:30 PM</option>
+                <option>8:00 PM</option>
+                <option>8:30 PM</option>
+                <option>9:00 PM</option>
+                <option>9:30 PM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guests">Guests</label>
+              <select id="guests">
+                <option value="">Number of guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 - 8</option>
+                <option>9 or more</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Special Requests (optional)</label>
+            <textarea
+              id="notes"
+              rows="3"
+              placeholder="Anything additional you want to mention"
+            ></textarea>
+          </div>
+
+          <button class="btn-primary full-width">Confirm Reservation</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h3>Restuarant</h3>
+          <p>Italian Dining<br />Lahore, Pakistan</p>
+        </div>
+        <div class="footer-info">
+          <p><strong>Address</strong><br />Near Comsats, Lahore</p>
+          <p><strong>Hours</strong><br />Tue – Sun · 6:30 PM – 11:30 PM</p>
+          <p><strong>Phone</strong><br />+92 42 3571 0000</p>
+        </div>
+        <div class="footer-info">
+          <p><strong>Email</strong><br />restuarant@199.pk</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Restuarant. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
