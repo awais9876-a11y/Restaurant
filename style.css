@@ -1,10 +1,6 @@
-/* =============================================
-   LA TAVOLA — RESTAURANT BOOKING PAGE
-   style.css
-   ============================================= */
-
-/* ---------- RESET & BASE ---------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,22 +11,34 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   color: #1a1a1a;
   background-color: #faf8f5;
   line-height: 1.6;
 }
 
-/* ---------- TYPOGRAPHY ---------- */
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
   line-height: 1.2;
 }
 
-h1 { font-size: 3.5rem; font-weight: 700; }
-h2 { font-size: 2.2rem; font-weight: 700; margin-bottom: 1.2rem; }
-h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem; }
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
 
 p {
   font-size: 1rem;
@@ -38,16 +46,16 @@ p {
   margin-bottom: 1rem;
 }
 
-.center { text-align: center; }
+.center {
+  text-align: center;
+}
 
-/* ---------- LAYOUT HELPER ---------- */
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-/* ---------- SECTION LABEL (eyebrow) ---------- */
 .section-label {
   display: block;
   font-size: 0.75rem;
@@ -62,12 +70,11 @@ p {
   text-align: center;
 }
 
-/* ---------- BUTTON ---------- */
 .btn-primary {
   display: inline-block;
   background-color: #b5843a;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -91,9 +98,6 @@ p {
   font-size: 1rem;
 }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
 .navbar {
   position: fixed;
   top: 0;
@@ -109,7 +113,7 @@ p {
 }
 
 .nav-logo {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #e8c97e;
@@ -135,14 +139,11 @@ p {
   color: #e8c97e;
 }
 
-/* ============================================================
-   HERO SECTION
-   ============================================================ */
 .hero {
   position: relative;
   height: 100vh;
   min-height: 580px;
-  background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&auto=format&fit=crop&q=80');
+  background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&auto=format&fit=crop&q=80");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -153,7 +154,11 @@ p {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(10,7,4,0.60) 0%, rgba(10,7,4,0.75) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 7, 4, 0.6) 0%,
+    rgba(10, 7, 4, 0.75) 100%
+  );
 }
 
 .hero-content {
@@ -184,9 +189,6 @@ p {
   margin-bottom: 2rem;
 }
 
-/* ============================================================
-   ABOUT SECTION
-   ============================================================ */
 .about {
   padding: 6rem 0;
   background-color: #faf8f5;
@@ -225,7 +227,7 @@ p {
 
 .stat-number {
   display: block;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: 700;
   color: #b5843a;
@@ -241,9 +243,6 @@ p {
   margin-top: 0.3rem;
 }
 
-/* ============================================================
-   MENU SECTION
-   ============================================================ */
 .menu {
   padding: 6rem 0;
   background-color: #f2ede4;
@@ -263,16 +262,17 @@ p {
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .menu-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
 }
 
-/* Gradient placeholder images for each menu card */
 .menu-img {
   height: 190px;
   width: 100%;
@@ -314,15 +314,12 @@ p {
 }
 
 .menu-price {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.1rem;
   font-weight: 700;
   color: #1a1a1a;
 }
 
-/* ============================================================
-   BOOKING SECTION
-   ============================================================ */
 .booking {
   padding: 6rem 0;
   background-color: #faf8f5;
@@ -341,10 +338,9 @@ p {
   padding: 2.5rem;
   max-width: 820px;
   margin: 0 auto;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
 }
 
-/* Form rows use flexbox */
 .form-row {
   display: flex;
   gap: 1.4rem;
@@ -370,7 +366,7 @@ p {
 .form-group input,
 .form-group select,
 .form-group textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.95rem;
   color: #1a1a1a;
   background-color: #faf8f5;
@@ -399,9 +395,6 @@ p {
   margin-bottom: 1.4rem;
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
 .footer {
   background-color: #0f0c09;
   color: #ccc9c0;
@@ -416,7 +409,7 @@ p {
 }
 
 .footer-brand h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.8rem;
   color: #e8c97e;
   margin-bottom: 0.5rem;
@@ -454,13 +447,14 @@ p {
   margin: 0;
 }
 
-/* ============================================================
-   RESPONSIVE — CSS GRID adapts at smaller screens
-   ============================================================ */
 @media (max-width: 900px) {
-  h1 { font-size: 2.6rem; }
+  h1 {
+    font-size: 2.6rem;
+  }
 
-  .navbar { padding: 1rem 1.5rem; }
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
 
   .about-grid {
     flex-direction: column;
@@ -477,10 +471,16 @@ p {
 }
 
 @media (max-width: 600px) {
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.7rem; }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
 
-  .nav-links { display: none; }
+  .nav-links {
+    display: none;
+  }
 
   .menu-grid {
     grid-template-columns: 1fr;
